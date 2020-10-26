@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={{url_for('static',filename='styling.css')}}>
+    <title>contents</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<body>
+    <div class="topnav">
+        <a href="/">Home</a>
+        <a href="/positions">Postions</a>
+        <a href="/trainings">Trainings</a>
+        <a href="/wins">Wins</a>
+        <a class="active" href="/add">Add New Player</a>
+        <img class="navbarimg" src="https://www.mainlanduniforms.nz/img/cms/Burnside.png" alt="Burnside High Logo" width="250" height="48">   
+      </div>
+
+<table>
+      <form action="/add" method="post">
+        <th class="addplayerheader">Enter new player data</th>
+      </table>
+
+        <element class="newplayername" type="text">
+             <h4 class="newplayerheader">Name:</h4>
+            <label for="new_player_name"></label>
+            <input type="text" id="player_name" name="new_player_name" placeholder="First name...">
+        </element>
+
+        <element class ="newtrainings" type="number">
+            <h4 class="newplayerheader">Trainings attended:</h4>
+            <label for="new_player_trainings"></label>
+            <input type="number" id="trainings" name="new_player_trainings" placeholder="Number of trainings...">
+        </element>
+
+        <element class="newwins" type="number">
+            <h4 class="newplayerheader">Wins contributed to:</h4>
+            <label for="new_player_wins"></label>
+            <input type="number" id="wins" name="new_player_wins" placeholder="Number of wins...">
+        </element>
+
+        <h4 class="newpositionsheader">Position 1</h4>
+        <element class="newpositions">
+          <label for="Position1"></label>
+          <select id="Positions" name="Position1">
+            <option value="1">GK</option>
+            <option value="2">GD</option>
+            <option value="3">WD</option>
+            <option value="4">C</option>
+            <option value="5">WA</option>
+            <option value="6">GA</option>
+            <option value="7">GS</option>
+            </select>
+        </element>
+
+      <h4 class="newpositionsheader">Position 2</h4>
+       <element class="newpositions">
+          <label for="Position2"></label>
+          <select id="Positions" name="Position2">
+            <option value="1">GK</option>
+            <option value="2">GD</option>
+            <option value="3">WD</option>
+            <option value="4">C</option>
+            <option value="5">WA</option>
+            <option value="6">GA</option>
+            <option value="7">GS</option>
+          </select>
+       </element>
+
+       <h4 class="newpositionsheader">Position 3</h4>
+      <element class="newpositions">
+          <label for="Position3"></label>
+          <select id="Positions" name="Position3">
+            <option value="1">GK</option>
+            <option value="2">GD</option>
+            <option value="3">WD</option>
+            <option value="4">C</option>
+            <option value="5">WA</option>
+            <option value="6">GA</option>
+            <option value="7">GS</option>
+          </select>
+        </element>
+
+ </table>
+
+        <element class="submitbutton">
+          <input type="submit" value="Submit">
+        </element>
+    </form>
+
+ </body>

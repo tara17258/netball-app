@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={{url_for('static',filename='styling.css')}}>
+    <title>contents</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="/">Home</a>
+        <a href="/positions">Postions</a>
+        <a class="active" href="/trainings">Trainings</a>
+        <a href="/wins">Wins</a>
+        <a href="/add">Add New Player</a>
+        <img class="navbarimg" src="https://www.mainlanduniforms.nz/img/cms/Burnside.png" alt="Burnside High Logo" width="250" height="48">   
+      </div>
+    <table>
+        <tr>
+            <th class = "bluetrainings">Name</th>
+            <th class = "bluetrainings">Trainings</th>
+
+        </tr>
+        {% for item in results %}
+        <tr>
+            <td>{{ item [0] }}</td>
+            <td>{{ item [1] }}</td>
+
+
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

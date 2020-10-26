@@ -1,0 +1,248 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width:96%;
+    margin-left: 25px;
+  }
+  
+  td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  th {
+    text-align: left;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: middle;
+    background-color: #071568;
+    color: white;
+  }
+  
+  tr:hover {background-color: #a5a7b3;}
+
+  /* table header colour for positions */
+  .greenpositions {
+    background-color: #28a745;
+  }
+
+  /* table header colour for trainings */
+  .bluetrainings {
+    background-color: #17a2b8;
+  }
+
+  /* table header colour for wins */
+  .purplewins {
+    background-color: #855fb6;
+  }
+  
+  /* be able to change the margin for this one */
+  .addplayerheader {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+  }
+
+    /* delete button on home route */
+  .button {
+    background-color: white; 
+    border: 1px solid #49557cbb;
+    border-radius: 4px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    transition-duration: 0.2s;
+    float: right;
+    /*make sit on right side */
+  }
+
+ .button:hover {
+    background-color: #49557cbb;
+    color: white;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* colours for navagation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(99, 98, 98);
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #235648;
+    color: white;
+  }
+
+  .newplayername [type=text] {
+    text-align: left;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    width: 25%;
+    padding: 12px 20px;
+    margin: 25px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+
+  .newplayername [type=text]:focus {
+    background-color: lightblue;
+  }
+
+  /* form styling for new player input */
+  .newtrainings [type=number] {
+    text-align: left;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    width: 25%;
+    padding: 12px 20px;
+    margin-left: 25px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+
+  .newtrainings [type=number]:focus {
+    background-color: lightblue;
+  }
+
+  .newwins [type=number] {
+    text-align: left;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-left: 25px;
+    margin-bottom: 15px;
+  }
+
+  .newwins [type=number]:focus {
+    background-color: lightblue;
+  }
+
+  /* submit button for input */
+  .submitbutton [type=submit]{
+    width: 10%;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 25px;
+  }
+  
+  .submitbutton [type=submit]:hover {
+    background-color: #757575;
+  }
+
+  .submitbutton:hover {
+    background-color: #49557cd2;
+    color: white;
+  }
+
+  /* second part of input for new player */
+  .newpositions {
+    text-align: left;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    width: 20%;
+    padding: 12px 20px;
+    margin-left: 25px;
+    box-sizing: border-box;
+    /* color: rgb(150, 236, 150); */
+  }
+
+  /* table header colour for dynamic route */
+  .playerroute {
+    text-align: left;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    background-color: #2f485c
+  }
+
+  /* headers for new player input */
+  .newplayerheader {
+    margin-left: 50px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+  
+  /* headers for new positions */
+  .newpositionsheader {
+    margin-left: 50px;
+  }
+    /* player name links */
+
+/* unvisited link */
+.dynamiclinks:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */
+.dynamiclinks:visited {
+  color: rgb(45, 55, 145);
+  text-decoration: none;
+}
+
+/* mouse over link */
+.dynamiclinks:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+/* selected link */ 
+.dynamiclinks:active {
+  color: rgb(248, 255, 152);
+  text-decoration: none;
+}
+
+/* update player name header */
+.updateplayerheader {
+  background-color: #2f485c
+}
+
+.updatedplayername {
+  float: right;
+  margin-right: 750px;
+  margin-left: 50px;
+  text-align: left;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  width: 25%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+}
+
+.navbarimg {
+  float: right; 
+  background-color: transparent;
+  background-position: center center; 
+  background-repeat: no-repeat no-repeat;
+  margin-right: 15px;
+}

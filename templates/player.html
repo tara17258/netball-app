@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={{url_for('static',filename='styling.css')}}>
+    <title>contents</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+
+        
+        </style>
+</head>
+<body>
+    <div class="topnav">
+
+        <a class="active" href="/">Home</a>
+        <a href="/positions">Postions</a>
+        <a href="/trainings">Trainings</a>
+        <a href="/wins">Wins</a>
+        <a href="/add">Add New Player</a>
+        <img class="navbarimg" src="https://www.mainlanduniforms.nz/img/cms/Burnside.png" alt="Burnside High Logo" width="250" height="48">   
+       </div>
+    <table>
+        <tr>
+            <th>Name</th>
+        </tr>
+        {% for item in results %}
+        <tr>
+            <td> <a class="dynamiclinks" href="{{ url_for('player', id=item[0]) }}"> {{ item [1] }} </a> 
+                <element class="button">
+                <form action="/delete" method="post">
+                <input type="hidden" name="player_name" value="{{ item[0] }}">
+                <input class="button" type="submit" value="delete">
+                </element>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+
+    </table>
+    
+</body>
+</html>
+<!--
+    <a style="float: right; background-color: transparent; background-image: url(&quot;https://asset-cdn.schoology.com/system/files/imagecache/node_themes/sites/all/themes/schoology_theme/node_themes/904105548/BrandingBurnsideHS_58501bb0a60a8.png&quot;); background-position: center center; background-repeat: no-repeat no-repeat;"><span class="_3Zqni"></span>...........................</a>        
+style="background-image: url(&quot;https://asset-cdn.schoology.com/system/files/imagecache/node_themes/sites/all/themes/schoology_theme/node_themes/904105548/BrandingBurnsideHS_58501bb0a60a8.png&quot;); "> ........................... </a>        
+
+-->
