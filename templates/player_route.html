@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href={{url_for('static',filename='styling.css')}}>
-    <title>contents</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-</head>
+{% extends 'base.html' %}
+{% block body %}
 <body class="image">
 
         <div class="topnav">
@@ -17,7 +8,6 @@
         <a href="/trainings">Trainings</a>
         <a href="/wins">Wins</a>
         <a href="/add">Add New Player</a>
-        <a class="active" href="/player/<int:id>">Player Data</a>
         <img class="navbarimg" src="https://www.mainlanduniforms.nz/img/cms/Burnside.png" alt="Burnside High Logo" width="250" height="48">   
       </div>
       <table>
@@ -50,6 +40,6 @@
  {% endfor %}
     </table>
 </body>
-<img src="https://burnside.schoolpoint.co.nz/img_cache/burnside_logo.png?v1" class="school-logo" alt="Burnside High School" title="Burnside High School">
+<img src="https://burnside.schoolpoint.co.nz/img_cache/burnside_logo.png?v1" class="school-logo" alt="Burnside High School" title="Burnside High School" width="400" height="175">
 
-</html>
+{% endblock %}
