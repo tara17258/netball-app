@@ -158,12 +158,7 @@ table {
   }
   
   .submitbutton [type=submit]:hover {
-    background-color: #757575;
-  }
-
-  .submitbutton:hover {
-    background-color: #49557cd2;
-    color: white;
+    background-color: #3e476e;
   }
 
   /* second part of input for new player */
