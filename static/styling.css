@@ -46,7 +46,7 @@ table {
 
   /* table header colour for wins */
   .purplewins {
-    background-color: #7e5aac;
+    background-color: #8d6ab9;
   }
   
   /* be able to change the margin for this one */
@@ -55,7 +55,7 @@ table {
     width: 100%;
   }
 
-    /* delete button on home route */
+  /* delete button on home route */
   .button {
     background-color: white; 
     border: 1px solid #49557cbb;
